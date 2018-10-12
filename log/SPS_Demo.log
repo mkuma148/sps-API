@@ -1,0 +1,1123 @@
+2018-10-12 00:11:21 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 00:11:21 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3aefe5e5: startup date [Thu Oct 11 23:37:54 IST 2018]; root of context hierarchy
+2018-10-12 00:11:21 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 00:11:21 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 00:11:21 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 00:11:21 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 10:52:46 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 4268 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 10:52:46 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 10:52:46 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb7fc54: startup date [Fri Oct 12 10:52:46 IST 2018]; root of context hierarchy
+2018-10-12 10:52:50 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6a6b0503] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 10:52:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 10:52:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 10:52:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 10:52:53 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 10:52:54 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 10:52:54 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 10:52:54 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 10:52:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 10:52:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 10:52:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 10:52:54 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 10:52:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 10:52:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 10:52:55 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 10:52:55 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 163 ms.
+2018-10-12 10:52:55 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 10:52:55 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendManagementController' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\controller\FriendManagementController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'frientMangmtService' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\service\FrientMangmtService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendMangmtRepo' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\repository\FriendMangmtRepo.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+2018-10-12 10:52:55 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2018-10-12 10:52:55 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-12 10:52:56 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendManagementController' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\controller\FriendManagementController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'frientMangmtService' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\service\FrientMangmtService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendMangmtRepo' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\repository\FriendMangmtRepo.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1124)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.capgemini.SpsDemoApplication.main(SpsDemoApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'frientMangmtService' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\service\FrientMangmtService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendMangmtRepo' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\repository\FriendMangmtRepo.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1124)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendMangmtRepo' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\repository\FriendMangmtRepo.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1124)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1124)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	... 70 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1012)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:338)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:333)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerPostProcessor.postProcessAfterInitialization(DataSourceInitializerPostProcessor.java:55)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1703)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	... 80 common frames omitted
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:494)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:240)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:48)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:210)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:123)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:93)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:37)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.initialize(DataSourceInitializerInvoker.java:73)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.afterPropertiesSet(DataSourceInitializerInvoker.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	... 93 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.command.Parser.parseColumn(Parser.java:936)
+	at org.h2.command.Parser.parseColumnList(Parser.java:920)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1258)
+	at org.h2.command.Parser.parseInsert(Parser.java:1222)
+	at org.h2.command.Parser.parsePrepared(Parser.java:431)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:473)
+	... 108 common frames omitted
+2018-10-12 10:56:24 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 2584 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 10:56:24 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 10:56:24 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f552bd3: startup date [Fri Oct 12 10:56:24 IST 2018]; root of context hierarchy
+2018-10-12 10:56:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fce512d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 10:56:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 10:56:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 10:56:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 10:56:27 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 10:56:27 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 10:56:27 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 10:56:27 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 10:56:27 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 10:56:27 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 10:56:27 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 10:56:27 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 10:56:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 10:56:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 10:56:27 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 10:56:27 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 21 ms.
+2018-10-12 10:56:27 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 10:56:27 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendManagementController' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\controller\FriendManagementController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'frientMangmtService' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\service\FrientMangmtService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendMangmtRepo' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\repository\FriendMangmtRepo.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+2018-10-12 10:56:27 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2018-10-12 10:56:27 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-12 10:56:27 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendManagementController' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\controller\FriendManagementController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'frientMangmtService' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\service\FrientMangmtService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendMangmtRepo' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\repository\FriendMangmtRepo.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1124)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.capgemini.SpsDemoApplication.main(SpsDemoApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'frientMangmtService' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\service\FrientMangmtService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendMangmtRepo' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\repository\FriendMangmtRepo.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1124)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'friendMangmtRepo' defined in file [D:\mukesh\SPS-DEMO\target\classes\com\capgemini\repository\FriendMangmtRepo.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1124)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:732)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1267)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1124)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:535)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:818)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:724)
+	... 70 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker': Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:224)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1012)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:338)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:333)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerPostProcessor.postProcessAfterInitialization(DataSourceInitializerPostProcessor.java:55)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1703)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	... 80 common frames omitted
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]: insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()); nested exception is org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:494)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:240)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:48)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.runScripts(DataSourceInitializer.java:210)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer.initSchema(DataSourceInitializer.java:123)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:93)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.onApplicationEvent(DataSourceInitializerInvoker.java:37)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.initialize(DataSourceInitializerInvoker.java:73)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker.afterPropertiesSet(DataSourceInitializerInvoker.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	... 93 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLException: Column "UPDATED" not found; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('soni.mukesh915@gmail.com', '', '', '', '', now()) [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.command.Parser.parseColumn(Parser.java:936)
+	at org.h2.command.Parser.parseColumnList(Parser.java:920)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1258)
+	at org.h2.command.Parser.parseInsert(Parser.java:1222)
+	at org.h2.command.Parser.parsePrepared(Parser.java:431)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:473)
+	... 108 common frames omitted
+2018-10-12 10:58:14 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 4860 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 10:58:14 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 10:58:14 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6af93788: startup date [Fri Oct 12 10:58:14 IST 2018]; root of context hierarchy
+2018-10-12 10:58:16 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7d6e0f9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 10:58:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 10:58:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 10:58:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 10:58:16 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 10:58:16 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 10:58:17 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 10:58:17 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 10:58:17 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 10:58:17 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 10:58:17 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 10:58:17 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 10:58:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 10:58:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 10:58:17 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 10:58:17 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 29 ms.
+2018-10-12 10:58:17 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 10:58:17 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 9 ms.
+2018-10-12 10:58:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 10:58:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 10:58:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 10:58:19 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 10:58:19 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 10:58:19 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 10:58:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 10:58:19 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 6.36 seconds (JVM running for 7.871)
+2018-10-12 10:58:26 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 10:58:26 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - emailListRecievesupdates ::
+2018-10-12 10:58:26 [http-nio-8086-exec-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-12 10:58:26 [http-nio-8086-exec-1] ERROR c.c.c.FriendManagementController - PreparedStatementCallback; uncategorized SQLException for SQL [insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values(?,?,?,?,?,?)]; SQL state [90012]; error code [90012]; Parameter "#6" is not set; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values(?,?,?,?,?,?) [90012-197]; nested exception is org.h2.jdbc.JdbcSQLException: Parameter "#6" is not set; SQL statement:
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values(?,?,?,?,?,?) [90012-197]
+2018-10-12 10:59:33 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 10:59:33 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6af93788: startup date [Fri Oct 12 10:58:14 IST 2018]; root of context hierarchy
+2018-10-12 10:59:33 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 10:59:33 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 10:59:33 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 10:59:33 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 10:59:40 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 4468 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 10:59:40 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 10:59:40 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78b66d36: startup date [Fri Oct 12 10:59:40 IST 2018]; root of context hierarchy
+2018-10-12 10:59:43 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa9abf93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 10:59:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 10:59:43 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 10:59:43 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 10:59:43 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 10:59:43 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 10:59:44 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 10:59:44 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 10:59:44 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 10:59:44 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 10:59:44 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 10:59:44 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 10:59:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 10:59:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 10:59:44 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 10:59:44 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 22 ms.
+2018-10-12 10:59:44 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 10:59:44 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 13 ms.
+2018-10-12 10:59:46 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 10:59:46 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 10:59:46 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 10:59:46 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 10:59:46 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 10:59:46 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 10:59:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 10:59:46 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 7.009 seconds (JVM running for 8.901)
+2018-10-12 10:59:49 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 10:59:49 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - emailListRecievesupdates ::
+2018-10-12 11:01:50 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 11:01:50 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78b66d36: startup date [Fri Oct 12 10:59:40 IST 2018]; root of context hierarchy
+2018-10-12 11:01:50 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 11:01:50 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 11:01:50 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 11:01:50 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 11:01:58 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 3964 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 11:01:58 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 11:01:58 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ef888f6: startup date [Fri Oct 12 11:01:58 IST 2018]; root of context hierarchy
+2018-10-12 11:02:00 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f6f5034d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 11:02:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 11:02:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 11:02:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 11:02:01 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 11:02:01 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 11:02:01 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 11:02:01 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 11:02:01 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 11:02:01 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 11:02:01 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 11:02:01 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 11:02:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 11:02:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 11:02:02 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 11:02:02 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 31 ms.
+2018-10-12 11:02:02 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 11:02:02 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 10 ms.
+2018-10-12 11:02:04 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 11:02:04 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 11:02:04 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 11:02:04 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 11:02:04 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 11:02:04 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 11:02:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 11:02:04 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 6.654 seconds (JVM running for 8.073)
+2018-10-12 11:02:31 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 11:02:31 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - emailListRecievesupdates ::
+2018-10-12 11:06:43 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 11:06:43 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ef888f6: startup date [Fri Oct 12 11:01:58 IST 2018]; root of context hierarchy
+2018-10-12 11:06:43 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 11:06:43 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 11:06:43 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 11:06:43 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 11:07:01 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 3248 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 11:07:01 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 11:07:01 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ef888f6: startup date [Fri Oct 12 11:07:01 IST 2018]; root of context hierarchy
+2018-10-12 11:07:03 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f91a888b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 11:07:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 11:07:04 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 11:07:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 11:07:04 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 11:07:04 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 11:07:04 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 11:07:04 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 11:07:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 11:07:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 11:07:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 11:07:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 11:07:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 11:07:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 11:07:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 11:07:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 29 ms.
+2018-10-12 11:07:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 11:07:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 13 ms.
+2018-10-12 11:07:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 11:07:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 11:07:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 11:07:07 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 11:07:07 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 11:07:07 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 11:07:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 11:07:07 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 6.311 seconds (JVM running for 7.389)
+2018-10-12 11:07:32 [http-nio-8086-exec-7] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 11:07:56 [http-nio-8086-exec-8] INFO  c.c.c.FriendManagementController - newFriendConnection :: 
+2018-10-12 11:08:28 [http-nio-8086-exec-2] INFO  c.c.c.FriendManagementController - newFriendConnection :: 
+2018-10-12 11:08:46 [http-nio-8086-exec-10] INFO  c.c.c.FriendManagementController - newFriendConnection :: 
+2018-10-12 11:08:58 [http-nio-8086-exec-7] INFO  c.c.c.FriendManagementController - newFriendConnection :: 
+2018-10-12 11:09:23 [http-nio-8086-exec-6] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 11:12:03 [http-nio-8086-exec-2] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 11:12:37 [http-nio-8086-exec-10] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 11:12:58 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 11:15:12 [http-nio-8086-exec-10] INFO  c.c.c.FriendManagementController - emailListRecievesupdates ::
+2018-10-12 11:19:57 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 11:19:57 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6ef888f6: startup date [Fri Oct 12 11:07:01 IST 2018]; root of context hierarchy
+2018-10-12 11:19:57 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 11:19:57 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 11:19:57 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 11:19:57 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 11:20:07 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 4964 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 11:20:08 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 11:20:08 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ef9296d: startup date [Fri Oct 12 11:20:08 IST 2018]; root of context hierarchy
+2018-10-12 11:20:10 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f91a888b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 11:20:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 11:20:11 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 11:20:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 11:20:11 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 11:20:11 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 11:20:11 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 11:20:11 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 11:20:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 11:20:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 11:20:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 11:20:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 11:20:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 11:20:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 11:20:12 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 11:20:12 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 30 ms.
+2018-10-12 11:20:12 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 11:20:12 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 15 ms.
+2018-10-12 11:20:14 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 11:20:14 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 11:20:14 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 11:20:14 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 11:20:14 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 11:20:14 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 11:20:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 11:20:14 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 7.642 seconds (JVM running for 8.963)
+2018-10-12 11:23:45 [http-nio-8086-exec-3] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 11:23:46 [http-nio-8086-exec-3] INFO  c.c.c.FriendManagementController - newFriendConnection :: 
+2018-10-12 11:24:19 [http-nio-8086-exec-8] INFO  c.c.c.FriendManagementController - newFriendConnection :: 
+2018-10-12 11:24:33 [http-nio-8086-exec-3] INFO  c.c.c.FriendManagementController - newFriendConnection :: 
+2018-10-12 11:25:06 [http-nio-8086-exec-9] INFO  c.c.c.FriendManagementController - newFriendConnection :: 
+2018-10-12 11:26:08 [http-nio-8086-exec-10] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 11:26:33 [http-nio-8086-exec-8] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 11:26:54 [http-nio-8086-exec-10] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 11:27:15 [http-nio-8086-exec-4] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 11:29:07 [http-nio-8086-exec-6] INFO  c.c.c.FriendManagementController - emailListRecievesupdates ::
+2018-10-12 11:30:03 [http-nio-8086-exec-2] INFO  c.c.c.FriendManagementController - emailListRecievesupdates ::
+2018-10-12 11:31:59 [http-nio-8086-exec-4] INFO  c.c.c.FriendManagementController - emailListRecievesupdates ::
+2018-10-12 11:32:14 [http-nio-8086-exec-9] INFO  c.c.c.FriendManagementController - emailListRecievesupdates ::
+2018-10-12 11:36:14 [http-nio-8086-exec-2] INFO  c.c.c.FriendManagementController - emailListRecievesupdates ::
+2018-10-12 11:37:59 [http-nio-8086-exec-7] INFO  c.c.c.FriendManagementController - newFriendConnection :: 
+2018-10-12 11:40:26 [http-nio-8086-exec-3] INFO  c.c.c.FriendManagementController - emailListRecievesupdates ::
+2018-10-12 11:48:15 [http-nio-8086-exec-7] INFO  c.c.c.FriendManagementController - emailListRecievesupdates ::
+2018-10-12 13:55:32 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m20s223ms27µs446ns).
+2018-10-12 14:17:16 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 14:17:16 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ef9296d: startup date [Fri Oct 12 11:20:08 IST 2018]; root of context hierarchy
+2018-10-12 14:17:16 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 14:17:16 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 14:17:16 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 14:17:16 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 14:17:39 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 4148 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 14:17:39 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 14:17:39 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c93084c: startup date [Fri Oct 12 14:17:39 IST 2018]; root of context hierarchy
+2018-10-12 14:17:41 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8b318ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 14:17:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 14:17:41 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 14:17:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 14:17:41 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 14:17:41 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 14:17:41 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 14:17:41 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 14:17:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 14:17:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 14:17:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 14:17:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 14:17:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 14:17:42 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 14:17:42 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 14:17:42 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 15 ms.
+2018-10-12 14:17:42 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 14:17:42 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 7 ms.
+2018-10-12 14:17:43 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 14:17:43 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 14:17:43 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 14:17:43 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 14:17:43 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 14:17:43 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 14:17:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 14:17:43 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.353 seconds (JVM running for 5.028)
+2018-10-12 14:18:42 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 14:18:42 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:18:53 [http-nio-8086-exec-2] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:19:04 [http-nio-8086-exec-3] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:21:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 14:21:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1c93084c: startup date [Fri Oct 12 14:17:39 IST 2018]; root of context hierarchy
+2018-10-12 14:21:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 14:21:19 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 14:21:19 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 14:21:19 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 14:21:25 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 5032 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 14:21:25 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 14:21:25 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ea227af: startup date [Fri Oct 12 14:21:25 IST 2018]; root of context hierarchy
+2018-10-12 14:21:27 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b3b59751] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 14:21:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 14:21:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 14:21:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 14:21:27 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 14:21:27 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 14:21:27 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 14:21:27 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 14:21:27 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 14:21:27 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 14:21:27 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 14:21:27 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 14:21:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 14:21:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 14:21:28 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 14:21:28 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 15 ms.
+2018-10-12 14:21:28 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 14:21:28 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 7 ms.
+2018-10-12 14:21:29 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 14:21:29 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 14:21:29 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 14:21:29 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 14:21:29 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 14:21:29 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 14:21:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 14:21:29 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.167 seconds (JVM running for 4.863)
+2018-10-12 14:21:35 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 14:21:36 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:21:43 [http-nio-8086-exec-2] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:21:50 [http-nio-8086-exec-3] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:23:22 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 14:23:22 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2ea227af: startup date [Fri Oct 12 14:21:25 IST 2018]; root of context hierarchy
+2018-10-12 14:23:22 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 14:23:22 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 14:23:22 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 14:23:22 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 14:23:28 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 6008 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 14:23:28 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 14:23:28 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7adda9cc: startup date [Fri Oct 12 14:23:28 IST 2018]; root of context hierarchy
+2018-10-12 14:23:29 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a33d2c23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 14:23:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 14:23:29 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 14:23:29 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 14:23:29 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 14:23:29 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 14:23:30 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 14:23:30 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 14:23:30 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 14:23:30 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 14:23:30 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 14:23:30 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 14:23:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 14:23:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 14:23:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 14:23:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 15 ms.
+2018-10-12 14:23:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 14:23:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 7 ms.
+2018-10-12 14:23:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 14:23:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 14:23:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 14:23:31 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 14:23:31 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 14:23:31 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 14:23:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 14:23:31 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.167 seconds (JVM running for 4.861)
+2018-10-12 14:23:49 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 14:23:49 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:24:12 [http-nio-8086-exec-2] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:24:19 [http-nio-8086-exec-3] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:24:36 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:25:41 [http-nio-8086-exec-3] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:26:09 [http-nio-8086-exec-9] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:26:10 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:30:59 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 14:30:59 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7adda9cc: startup date [Fri Oct 12 14:23:28 IST 2018]; root of context hierarchy
+2018-10-12 14:30:59 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 14:30:59 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 14:30:59 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 14:30:59 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 14:31:05 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 3744 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 14:31:05 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 14:31:05 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fe7aac8: startup date [Fri Oct 12 14:31:05 IST 2018]; root of context hierarchy
+2018-10-12 14:31:06 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e74a0f99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 14:31:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 14:31:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 14:31:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 14:31:07 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 14:31:07 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 14:31:07 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 14:31:07 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 14:31:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 14:31:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 14:31:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 14:31:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 14:31:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 14:31:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 14:31:07 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 14:31:07 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 15 ms.
+2018-10-12 14:31:07 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 14:31:07 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 7 ms.
+2018-10-12 14:31:08 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 14:31:08 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 14:31:08 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 14:31:08 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 14:31:08 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 14:31:09 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 14:31:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 14:31:09 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.249 seconds (JVM running for 4.994)
+2018-10-12 14:31:21 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 14:31:21 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:31:27 [http-nio-8086-exec-2] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:31:38 [http-nio-8086-exec-3] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:31:40 [http-nio-8086-exec-4] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:31:43 [http-nio-8086-exec-5] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:38:48 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 14:38:48 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6fe7aac8: startup date [Fri Oct 12 14:31:05 IST 2018]; root of context hierarchy
+2018-10-12 14:38:48 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 14:38:48 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 14:38:48 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 14:38:48 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 14:40:01 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 5140 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 14:40:01 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 14:40:01 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7880cdf3: startup date [Fri Oct 12 14:40:01 IST 2018]; root of context hierarchy
+2018-10-12 14:40:03 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f91a888b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 14:40:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 14:40:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 14:40:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 14:40:03 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 14:40:03 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 14:40:03 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 14:40:03 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 14:40:03 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 14:40:03 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 14:40:03 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 14:40:03 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 14:40:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 14:40:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 14:40:03 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 14:40:03 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 16 ms.
+2018-10-12 14:40:03 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 14:40:03 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 7 ms.
+2018-10-12 14:40:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 14:40:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 14:40:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 14:40:05 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 14:40:05 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 14:40:05 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 14:40:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 14:40:05 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.205 seconds (JVM running for 4.898)
+2018-10-12 14:41:05 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 14:41:05 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7880cdf3: startup date [Fri Oct 12 14:40:01 IST 2018]; root of context hierarchy
+2018-10-12 14:41:05 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 14:41:05 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 14:41:05 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 14:41:05 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 14:41:22 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 5464 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 14:41:22 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 14:41:22 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5223e5ee: startup date [Fri Oct 12 14:41:22 IST 2018]; root of context hierarchy
+2018-10-12 14:41:24 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$177a75de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 14:41:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 14:41:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 14:41:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 14:41:24 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 14:41:24 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 14:41:24 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 14:41:24 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 14:41:24 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 14:41:24 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 14:41:24 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 14:41:24 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 14:41:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 14:41:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 14:41:25 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 14:41:25 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 15 ms.
+2018-10-12 14:41:25 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 14:41:25 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 6 ms.
+2018-10-12 14:41:26 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 14:41:26 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 14:41:26 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 14:41:26 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 14:41:26 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 14:41:26 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 14:41:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 14:41:26 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.379 seconds (JVM running for 5.049)
+2018-10-12 14:42:30 [http-nio-8086-exec-5] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 14:42:30 [http-nio-8086-exec-5] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:42:38 [http-nio-8086-exec-8] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:43:51 [http-nio-8086-exec-2] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-12 14:47:20 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 14:47:20 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5223e5ee: startup date [Fri Oct 12 14:41:22 IST 2018]; root of context hierarchy
+2018-10-12 14:47:20 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 14:47:20 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 14:47:20 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 14:47:20 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 14:47:26 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 3004 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 14:47:26 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 14:47:26 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7adda9cc: startup date [Fri Oct 12 14:47:26 IST 2018]; root of context hierarchy
+2018-10-12 14:47:27 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9c889b41] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 14:47:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 14:47:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 14:47:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 14:47:28 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 14:47:28 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 14:47:28 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 14:47:28 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 14:47:28 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 14:47:28 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 14:47:28 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 14:47:28 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 14:47:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 14:47:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 14:47:28 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 14:47:28 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 15 ms.
+2018-10-12 14:47:28 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 14:47:28 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 6 ms.
+2018-10-12 14:47:29 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 14:47:29 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 14:47:29 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 14:47:29 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 14:47:29 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 14:47:29 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 14:47:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 14:47:30 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.152 seconds (JVM running for 4.832)
+2018-10-12 14:47:35 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 14:47:35 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:48:59 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:49:19 [http-nio-8086-exec-4] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 14:58:50 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 14:58:50 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7adda9cc: startup date [Fri Oct 12 14:47:26 IST 2018]; root of context hierarchy
+2018-10-12 14:58:50 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 14:58:50 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 14:58:50 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 14:58:50 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 14:58:57 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 4108 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 14:58:57 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 14:58:57 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36c88a32: startup date [Fri Oct 12 14:58:57 IST 2018]; root of context hierarchy
+2018-10-12 14:58:58 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6ec011cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 14:58:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 14:58:59 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 14:58:59 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 14:58:59 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 14:58:59 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 14:58:59 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 14:58:59 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 14:58:59 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 14:58:59 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 14:58:59 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 14:58:59 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 14:58:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 14:58:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 14:58:59 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 14:58:59 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 15 ms.
+2018-10-12 14:58:59 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 14:58:59 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 7 ms.
+2018-10-12 14:59:00 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 14:59:00 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 14:59:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 14:59:01 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 14:59:01 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 14:59:01 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 14:59:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 14:59:01 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.181 seconds (JVM running for 4.864)
+2018-10-12 14:59:29 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 14:59:30 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 15:00:53 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 15:00:53 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36c88a32: startup date [Fri Oct 12 14:58:57 IST 2018]; root of context hierarchy
+2018-10-12 15:00:53 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 15:00:53 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 15:00:53 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 15:00:53 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 15:01:12 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 5356 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 15:01:12 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 15:01:12 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb7fc54: startup date [Fri Oct 12 15:01:12 IST 2018]; root of context hierarchy
+2018-10-12 15:01:13 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$990b3eb7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 15:01:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 15:01:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 15:01:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 15:01:14 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 15:01:14 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 15:01:14 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 15:01:14 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 15:01:14 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 15:01:14 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 15:01:14 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 15:01:14 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 15:01:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 15:01:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 15:01:14 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 15:01:14 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 15 ms.
+2018-10-12 15:01:14 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 15:01:14 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 6 ms.
+2018-10-12 15:01:15 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 15:01:15 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 15:01:15 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 15:01:15 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 15:01:15 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 15:01:15 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 15:01:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 15:01:16 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.171 seconds (JVM running for 4.857)
+2018-10-12 15:01:24 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 15:01:25 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 15:02:47 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 15:02:47 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb7fc54: startup date [Fri Oct 12 15:01:12 IST 2018]; root of context hierarchy
+2018-10-12 15:02:47 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 15:02:47 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 15:02:47 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 15:02:47 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 15:02:54 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 5688 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 15:02:54 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 15:02:54 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10e92f8f: startup date [Fri Oct 12 15:02:54 IST 2018]; root of context hierarchy
+2018-10-12 15:02:56 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa9abf93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 15:02:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 15:02:56 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 15:02:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 15:02:56 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 15:02:56 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 15:02:56 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 15:02:56 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 15:02:56 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 15:02:56 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 15:02:56 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 15:02:56 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 15:02:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 15:02:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 15:02:56 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 15:02:56 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 15 ms.
+2018-10-12 15:02:56 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 15:02:56 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 6 ms.
+2018-10-12 15:02:58 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 15:02:58 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 15:02:58 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 15:02:58 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 15:02:58 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 15:02:58 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 15:02:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 15:02:58 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.24 seconds (JVM running for 4.937)
+2018-10-12 15:03:03 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 15:03:04 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 15:04:37 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 15:04:37 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10e92f8f: startup date [Fri Oct 12 15:02:54 IST 2018]; root of context hierarchy
+2018-10-12 15:04:37 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 15:04:37 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 15:04:37 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 15:04:37 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 15:04:43 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 5088 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 15:04:43 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 15:04:43 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1534f01b: startup date [Fri Oct 12 15:04:43 IST 2018]; root of context hierarchy
+2018-10-12 15:04:44 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$990b3eb7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 15:04:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 15:04:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 15:04:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 15:04:45 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 15:04:45 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 15:04:45 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 15:04:45 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 15:04:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 15:04:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 15:04:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 15:04:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 15:04:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 15:04:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 15:04:45 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 15:04:45 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 16 ms.
+2018-10-12 15:04:45 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 15:04:45 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 6 ms.
+2018-10-12 15:04:47 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 15:04:47 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 15:04:47 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 15:04:47 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 15:04:47 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 15:04:47 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 15:04:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 15:04:47 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.155 seconds (JVM running for 4.831)
+2018-10-12 15:04:53 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 15:04:53 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 15:05:23 [http-nio-8086-exec-8] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 15:13:44 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 15:13:44 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1534f01b: startup date [Fri Oct 12 15:04:43 IST 2018]; root of context hierarchy
+2018-10-12 15:13:44 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 15:13:44 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 15:13:44 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 15:13:44 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 15:13:50 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on vishu-PC with PID 5840 (D:\mukesh\SPS-DEMO\target\classes started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 15:13:50 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 15:13:50 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb7fc54: startup date [Fri Oct 12 15:13:50 IST 2018]; root of context hierarchy
+2018-10-12 15:13:51 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c6be299a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 15:13:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-12 15:13:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-12 15:13:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-12 15:13:52 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_151/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Java\jdk1.8.0_91\bin\;D:\sts-bundle\sts-3.9.6.RELEASE;;.]
+2018-10-12 15:13:52 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-12 15:13:52 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-12 15:13:52 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-12 15:13:52 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-12 15:13:52 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-12 15:13:52 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-12 15:13:52 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-12 15:13:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 15:13:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 15:13:52 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 15:13:52 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 16 ms.
+2018-10-12 15:13:52 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 15:13:52 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 6 ms.
+2018-10-12 15:13:53 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-12 15:13:53 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-12 15:13:53 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-12 15:13:53 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 15:13:53 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 15:13:53 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 15:13:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-12 15:13:54 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.153 seconds (JVM running for 4.841)
+2018-10-12 15:13:58 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-12 15:13:58 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 15:14:12 [http-nio-8086-exec-10] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 15:14:36 [http-nio-8086-exec-8] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 15:41:51 [main] INFO  c.c.c.FriendManagementControllerTest - Starting FriendManagementControllerTest on vishu-PC with PID 5820 (started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 15:41:51 [main] INFO  c.c.c.FriendManagementControllerTest - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 15:41:54 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$57ea9a15] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 15:41:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 15:41:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 15:41:55 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 15:41:55 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 53 ms.
+2018-10-12 15:41:55 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 15:41:55 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 14 ms.
+2018-10-12 15:41:59 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 15:41:59 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 15:41:59 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 15:41:59 [main] INFO  c.c.c.FriendManagementControllerTest - Started FriendManagementControllerTest in 9.693 seconds (JVM running for 11.685)
+2018-10-12 15:42:02 [main] INFO  c.c.c.FriendManagementController - --getFriendList :: ranga@gmail.com
+2018-10-12 15:42:02 [main] INFO  c.c.c.FriendManagementController - newFriendConnection :: 
+2018-10-12 15:42:02 [main] INFO  c.c.c.FriendManagementController - getCommonFriendList
+2018-10-12 15:42:02 [main] ERROR c.c.c.FriendManagementController - null
+2018-10-12 15:42:02 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 15:42:02 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 15:42:44 [main] INFO  c.c.c.FriendManagementControllerTest - Starting FriendManagementControllerTest on vishu-PC with PID 5152 (started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 15:42:44 [main] INFO  c.c.c.FriendManagementControllerTest - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 15:42:46 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$82b7a44b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 15:42:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 15:42:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 15:42:47 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 15:42:47 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 46 ms.
+2018-10-12 15:42:47 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 15:42:47 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 10 ms.
+2018-10-12 15:42:51 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 15:42:51 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 15:42:51 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 15:42:51 [main] INFO  c.c.c.FriendManagementControllerTest - Started FriendManagementControllerTest in 8.302 seconds (JVM running for 9.707)
+2018-10-12 15:42:53 [main] INFO  c.c.c.FriendManagementController - --getFriendList :: ranga@gmail.com
+2018-10-12 15:42:53 [main] INFO  c.c.c.FriendManagementController - newFriendConnection :: 
+2018-10-12 15:42:53 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 15:42:53 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 15:43:12 [main] INFO  c.c.c.FriendManagementControllerTest - Starting FriendManagementControllerTest on vishu-PC with PID 1904 (started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 15:43:12 [main] INFO  c.c.c.FriendManagementControllerTest - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 15:43:16 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4fff1895] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 15:43:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 15:43:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 15:43:16 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 15:43:16 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 39 ms.
+2018-10-12 15:43:16 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 15:43:16 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 8 ms.
+2018-10-12 15:43:20 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 15:43:20 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 15:43:20 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 15:43:20 [main] INFO  c.c.c.FriendManagementControllerTest - Started FriendManagementControllerTest in 8.376 seconds (JVM running for 9.754)
+2018-10-12 15:43:22 [main] INFO  c.c.c.FriendManagementController - newFriendConnection :: 
+2018-10-12 15:43:22 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 15:43:22 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 17:15:27 [main] INFO  c.c.c.FriendManagementControllerTest - Starting FriendManagementControllerTest on vishu-PC with PID 5764 (started by vishu in D:\mukesh\SPS-DEMO)
+2018-10-12 17:15:27 [main] INFO  c.c.c.FriendManagementControllerTest - The following profiles are active: swagger-enabled-for-qa
+2018-10-12 17:15:30 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2ee56919] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-12 17:15:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-12 17:15:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-12 17:15:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql]
+2018-10-12 17:15:31 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/schema.sql] in 38 ms.
+2018-10-12 17:15:31 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql]
+2018-10-12 17:15:31 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/D:/mukesh/SPS-DEMO/target/classes/data.sql] in 10 ms.
+2018-10-12 17:15:33 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-12 17:15:33 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-12 17:15:33 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-12 17:15:34 [main] INFO  c.c.c.FriendManagementControllerTest - Started FriendManagementControllerTest in 7.121 seconds (JVM running for 8.433)
+2018-10-12 17:15:35 [main] INFO  c.c.c.FriendManagementController - --getFriendList :: ranga@gmail.com
+2018-10-12 17:15:35 [main] INFO  c.c.c.FriendManagementController - newFriendConnection :: 
+2018-10-12 17:15:35 [main] INFO  c.c.c.FriendManagementController - getCommonFriendList
+2018-10-12 17:15:36 [main] INFO  c.c.c.FriendManagementController - subscribeFriend ::
+2018-10-12 17:15:36 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 17:15:36 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-12 18:06:23 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-12 18:06:23 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb7fc54: startup date [Fri Oct 12 15:13:50 IST 2018]; root of context hierarchy
+2018-10-12 18:06:23 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-12 18:06:23 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-12 18:06:23 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-12 18:06:23 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
