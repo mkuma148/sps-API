@@ -255,6 +255,4 @@ public class FriendManagementController {
 		return new ResponseEntity<FriendManagementValidation>(fmError, HttpStatus.BAD_REQUEST);
 
 	}
-
-
 }
