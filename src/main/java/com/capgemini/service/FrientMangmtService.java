@@ -22,7 +22,7 @@ public class FrientMangmtService {
 		this.friendMangmtRepo = friendMangmtRepo;
 	}
 
-	public FriendManagementValidation addNewFriendConnection(com.capgemini.model.UserRequest userReq) {
+	public FriendManagementValidation addNewFriendConnection(com.capgemini.model.UserRequest userReq) throws ResourceNotFoundException {
 		FriendManagementValidation fmResponse = friendMangmtRepo.addNewFriendConnection(userReq);
 		return fmResponse;
 	}

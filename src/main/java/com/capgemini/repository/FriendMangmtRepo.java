@@ -153,7 +153,7 @@ public class FriendMangmtRepo {
 		if (friends.size() == 0) {
 
 		} else {
-			commonFrndListresponse.setStatus("success");
+			commonFrndListresponse.setStatus("Success");
 			commonFrndListresponse.setCount(friends.size());
 			for (String friend : friends) {
 				commonFrndListresponse.getFriends().add(friend);
