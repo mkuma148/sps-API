@@ -1,5 +1,7 @@
 package com.capgemini.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,49 +14,59 @@ import com.capgemini.repository.FriendMangmtRepo;
 import com.capgemini.validation.FriendManagementValidation;
 
 @Service
-public class FrientMangmtService {
+public class FriendMangmtService {
+
+	private final Logger LOG = LoggerFactory.getLogger(getClass());
 
 	@Autowired
-	FriendMangmtRepo friendMangmtRepo;
+	FriendMangmtRepo friendMangmtRepository;
 
 	@Autowired
-	public FrientMangmtService(FriendMangmtRepo friendMangmtRepo) {
-		this.friendMangmtRepo = friendMangmtRepo;
+	public FriendMangmtService(FriendMangmtRepo friendMangmtRepo) {
+		this.friendMangmtRepository = friendMangmtRepo;
 	}
 
-	public FriendManagementValidation addNewFriendConnection(com.capgemini.model.UserRequest userReq) throws ResourceNotFoundException {
-		FriendManagementValidation fmResponse = friendMangmtRepo.addNewFriendConnection(userReq);
+	public FriendManagementValidation addNewFriendConnection(com.capgemini.model.UserRequest userReq)
+			throws ResourceNotFoundException {
+		LOG.info(":: In Service class .. addNewFriendConnection()");
+		FriendManagementValidation fmResponse = friendMangmtRepository.addNewFriendConnection(userReq);
 		return fmResponse;
 	}
 
 	public FriendManagementValidation subscribeTargetFriend(com.capgemini.model.Subscriber subscriber)
 			throws ResourceNotFoundException {
+		LOG.info(":: In Service class .. subscribeTargetFriend()");
 
-		return friendMangmtRepo.subscribeTargetFriend(subscriber);
+		return friendMangmtRepository.subscribeTargetFriend(subscriber);
 
 	}
 
 	public FriendManagementValidation unSubscribeTargetFriend(Subscriber subscriber) throws ResourceNotFoundException {
-		return friendMangmtRepo.unSubscribeTargetFriend(subscriber);
+		LOG.info(":: In Service class .. unSubscribeTargetFriend()");
+		return friendMangmtRepository.unSubscribeTargetFriend(subscriber);
 	}
+
 
 	public UserFriendsListResponse getFriendList(com.capgemini.model.FriendListRequest friendListRequest)
 			throws ResourceNotFoundException {
+		LOG.info(":: In Service class .. getFriendList()");
 
-		return friendMangmtRepo.getFriendsList(friendListRequest);
+		return friendMangmtRepository.getFriendsList(friendListRequest);
 
 	}
 
-	public CommonFriendsListResponse retrieveCommonFriendList(String email1, String email2)
+	public CommonFriendsListResponse retrieveCommonFriendList(final String email1, final String email2)
 			throws ResourceNotFoundException {
+		LOG.info(":: In Service class .. retrieveCommonFriendList()");
 
-		return friendMangmtRepo.retrieveCommonFriendList(email1, email2);
+		return friendMangmtRepository.retrieveCommonFriendList(email1, email2);
 	}
 
 	public EmailsListRecievesUpdatesResponse emailListRecievesupdates(
 			com.capgemini.model.EmailsListRecievesUpdatesRequest emailsList) throws ResourceNotFoundException {
+		LOG.info(":: In Service class .. EmailsListRecievesUpdatesRequest()");
 
-		return friendMangmtRepo.emailListRecievesupdates(emailsList);
+		return friendMangmtRepository.emailListRecievesupdates(emailsList);
 	}
 
 }

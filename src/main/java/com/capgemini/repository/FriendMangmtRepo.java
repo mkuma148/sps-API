@@ -25,17 +25,17 @@ import com.capgemini.validation.FriendManagementValidation;
 @Repository
 public class FriendMangmtRepo {
 
-	@Autowired
-	FriendManagementValidation friendMgntValidation;
-
-	@Autowired
-	JdbcTemplate jdbcTemplate;
-	
 	private final Logger LOG = LoggerFactory.getLogger(getClass());
 
 	@Autowired
+	FriendManagementValidation friendMgmtValidation;
+
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+
+	@Autowired
 	public FriendMangmtRepo(FriendManagementValidation fmError, JdbcTemplate jdbcTemplate) {
-		this.friendMgntValidation = fmError;
+		this.friendMgmtValidation = fmError;
 		this.jdbcTemplate = jdbcTemplate;
 	}
 
@@ -48,19 +48,22 @@ public class FriendMangmtRepo {
 	 * @param userReq
 	 * @return
 	 */
-	public FriendManagementValidation addNewFriendConnection(com.capgemini.model.UserRequest userReq)throws ResourceNotFoundException {
-			String requestor = userReq.getRequestor();
-			String target = userReq.getTarget();
+	public FriendManagementValidation addNewFriendConnection(com.capgemini.model.UserRequest userReq)
+			throws ResourceNotFoundException {
+		try {
 
-			String query = "SELECT email FROM friendmanagement";
+			final String requestor = userReq.getRequestor();
+			final String target = userReq.getTarget();
 
-			List<String> emails = jdbcTemplate.queryForList(query, String.class);
-			friendMgntValidation.setStatus("Success");
-			friendMgntValidation.setErrorDescription("Successfully connected");
+			final String query = "SELECT email FROM friendmanagement";
+
+			final List<String> emails = jdbcTemplate.queryForList(query, String.class);
+			friendMgmtValidation.setStatus("Success");
+			friendMgmtValidation.setErrorDescription("Successfully connected");
 			if (requestor.equals(target)) {
-				friendMgntValidation.setStatus("Failed");
-				friendMgntValidation.setErrorDescription("Requestor and target should not be same");
-				return friendMgntValidation;
+				friendMgmtValidation.setStatus("Failed");
+				friendMgmtValidation.setErrorDescription("Requestor and target should not be same");
+				return friendMgmtValidation;
 			}
 
 			if (emails.contains(requestor) && emails.contains(target)) {
@@ -68,15 +71,15 @@ public class FriendMangmtRepo {
 				boolean isBlocked = isBlocked(requestor, target);
 				if (!isBlocked) {
 					if (isAlreadyFriend(requestor, target)) {
-						friendMgntValidation.setStatus("Failed");
-						friendMgntValidation.setErrorDescription("Already friends");
+						friendMgmtValidation.setStatus("Failed");
+						friendMgmtValidation.setErrorDescription("Already friends");
 					} else {
 						connectFriend(requestor, target);
 						connectFriend(target, requestor);
 					}
 				} else {
-					friendMgntValidation.setStatus("Failed");
-					friendMgntValidation.setErrorDescription("target blocked");
+					friendMgmtValidation.setStatus("Failed");
+					friendMgmtValidation.setErrorDescription("target blocked");
 				}
 			} else if (!emails.contains(requestor) && !emails.contains(target)) {
 				insertEmail(requestor);
@@ -92,8 +95,13 @@ public class FriendMangmtRepo {
 				connectFriend(requestor, target);
 				connectFriend(target, requestor);
 			}
-		
-		return friendMgntValidation;
+		} catch (Exception e) {
+			LOG.debug(e.getLocalizedMessage());
+			;
+		}
+
+		return friendMgmtValidation;
+
 	}
 
 	/**
@@ -137,7 +145,8 @@ public class FriendMangmtRepo {
 	 * @param email2
 	 * @return
 	 */
-	public CommonFriendsListResponse retrieveCommonFriendList(String email1, String email2) throws ResourceNotFoundException{
+	public CommonFriendsListResponse retrieveCommonFriendList(String email1, String email2)
+			throws ResourceNotFoundException {
 		CommonFriendsListResponse commonFrndListresponse = new CommonFriendsListResponse();
 
 		String friendList1 = getFriendList(email1);
@@ -179,12 +188,12 @@ public class FriendMangmtRepo {
 		List<String> emails = jdbcTemplate.queryForList(query, String.class);
 
 		if (requestor.equals(target)) {
-			friendMgntValidation.setStatus("Failed");
-			friendMgntValidation.setErrorDescription("Requestor and target should not be same");
-			return friendMgntValidation;
+			friendMgmtValidation.setStatus("Failed");
+			friendMgmtValidation.setErrorDescription("Requestor and target should not be same");
+			return friendMgmtValidation;
 		}
-		friendMgntValidation.setStatus("Success");
-		friendMgntValidation.setErrorDescription("Subscribed successfully");
+		friendMgmtValidation.setStatus("Success");
+		friendMgmtValidation.setErrorDescription("Subscribed successfully");
 		boolean isBlocked = isBlocked(requestor, target);
 		if (!isBlocked) {
 			if (emails.contains(target) && emails.contains(requestor)) {
@@ -206,20 +215,20 @@ public class FriendMangmtRepo {
 						updateSubscribedBy(requestor, target);
 
 					} else {
-						friendMgntValidation.setStatus("Failed");
-						friendMgntValidation.setErrorDescription("Target already subscribed");
+						friendMgmtValidation.setStatus("Failed");
+						friendMgmtValidation.setErrorDescription("Target already subscribed");
 					}
 				}
 
 			} else {
-				friendMgntValidation.setStatus("Failed");
-				friendMgntValidation.setErrorDescription("Check Target or Requestor email id");
+				friendMgmtValidation.setStatus("Failed");
+				friendMgmtValidation.setErrorDescription("Check Target or Requestor email id");
 			}
 		} else {
-			friendMgntValidation.setStatus("Failed");
-			friendMgntValidation.setErrorDescription("target blocked");
+			friendMgmtValidation.setStatus("Failed");
+			friendMgmtValidation.setErrorDescription("target blocked");
 		}
-		return friendMgntValidation;
+		return friendMgmtValidation;
 	}
 
 	/**
@@ -230,7 +239,7 @@ public class FriendMangmtRepo {
 	 * @return
 	 */
 	public EmailsListRecievesUpdatesResponse emailListRecievesupdates(
-			com.capgemini.model.EmailsListRecievesUpdatesRequest emailsList)throws ResourceNotFoundException {
+			com.capgemini.model.EmailsListRecievesUpdatesRequest emailsList) throws ResourceNotFoundException {
 
 		EmailsListRecievesUpdatesResponse EmailsList = new EmailsListRecievesUpdatesResponse();
 
@@ -276,7 +285,6 @@ public class FriendMangmtRepo {
 			EmailsList.setStatus("Failed");
 		}
 		return EmailsList;
-		
 	}
 
 	/**
@@ -299,10 +307,10 @@ public class FriendMangmtRepo {
 			String sql = "SELECT subscriber FROM friendmanagement WHERE email=?";
 			String subscribers = (String) jdbcTemplate.queryForObject(sql, new Object[] { requestor }, String.class);
 			if (subscribers == null || subscribers.isEmpty()) {
-				friendMgntValidation.setStatus("Failed");
-				friendMgntValidation.setErrorDescription("Requestor does not subscribe to any email");
+				friendMgmtValidation.setStatus("Failed");
+				friendMgmtValidation.setErrorDescription("Requestor does not subscribe to any email");
 			} else {
-//				unsubscribeTarget(email);
+				// unsubscribeTarget(email);
 				String[] subs = subscribers.split(",");
 				ArrayList<String> subscriberList = new ArrayList<>(Arrays.asList(subs));
 				String targetId = getId(target);
@@ -334,18 +342,18 @@ public class FriendMangmtRepo {
 
 					updateUnsubscribeTable(requestor, target, "Blocked");
 
-					friendMgntValidation.setStatus("Success");
-					friendMgntValidation.setErrorDescription("Unsubscribed successfully");
+					friendMgmtValidation.setStatus("Success");
+					friendMgmtValidation.setErrorDescription("Unsubscribed successfully");
 				} else {
-					friendMgntValidation.setStatus("Failed");
-					friendMgntValidation.setErrorDescription("No Target available");
+					friendMgmtValidation.setStatus("Failed");
+					friendMgmtValidation.setErrorDescription("No Target available");
 				}
 			}
 		} else {
-			friendMgntValidation.setStatus("Failed");
-			friendMgntValidation.setErrorDescription("Please provide valid Requestor and Target email");
+			friendMgmtValidation.setStatus("Failed");
+			friendMgmtValidation.setErrorDescription("Please provide valid Requestor and Target email");
 		}
-		return friendMgntValidation;
+		return friendMgmtValidation;
 	}
 
 	/**
@@ -439,7 +447,7 @@ public class FriendMangmtRepo {
 		if (Arrays.asList(requestorFriends).contains(targetId) && Arrays.asList(targetFriends).contains(requestorId)) {
 			alreadyFriend = true;
 		}
-		LOG.info("alreadyFriend " + alreadyFriend);
+		LOG.info("alreadyFriend ... " + alreadyFriend);
 		return alreadyFriend;
 
 	}
@@ -482,11 +490,12 @@ public class FriendMangmtRepo {
 			String sqlrFriendList = "SELECT Subscription_Status FROM unsubscribe WHERE Requestor_email=? AND Target_email=?";
 			String Subscription_Status = (String) jdbcTemplate.queryForObject(sqlrFriendList,
 					new Object[] { requestor_email, target_email }, String.class);
-			LOG.info("Subscription_Status " + Subscription_Status);
+			LOG.info(":: Subscription_Status " + Subscription_Status);
 			if (Subscription_Status.equalsIgnoreCase("Blocked")) {
 				status = true;
 			}
 		} catch (Exception e) {
+			LOG.debug(e.getLocalizedMessage());
 
 		}
 		return status;
