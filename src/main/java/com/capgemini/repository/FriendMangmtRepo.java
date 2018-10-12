@@ -44,9 +44,7 @@ public class FriendMangmtRepo {
 	 * @param userReq
 	 * @return
 	 */
-	public FriendManagementValidation addNewFriendConnection(com.capgemini.model.UserRequest userReq) {
-		try {
-
+	public FriendManagementValidation addNewFriendConnection(com.capgemini.model.UserRequest userReq)throws ResourceNotFoundException {
 			String requestor = userReq.getRequestor();
 			String target = userReq.getTarget();
 
@@ -90,12 +88,8 @@ public class FriendMangmtRepo {
 				connectFriend(requestor, target);
 				connectFriend(target, requestor);
 			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
+		
 		return fmError;
-
 	}
 
 	/**
@@ -139,7 +133,7 @@ public class FriendMangmtRepo {
 	 * @param email2
 	 * @return
 	 */
-	public CommonFriendsListResponse retrieveCommonFriendList(String email1, String email2) {
+	public CommonFriendsListResponse retrieveCommonFriendList(String email1, String email2) throws ResourceNotFoundException{
 		CommonFriendsListResponse commonFrndListresponse = new CommonFriendsListResponse();
 
 		String friendList1 = getFriendList(email1);
@@ -232,7 +226,7 @@ public class FriendMangmtRepo {
 	 * @return
 	 */
 	public EmailsListRecievesUpdatesResponse emailListRecievesupdates(
-			com.capgemini.model.EmailsListRecievesUpdatesRequest emailsList) {
+			com.capgemini.model.EmailsListRecievesUpdatesRequest emailsList)throws ResourceNotFoundException {
 
 		EmailsListRecievesUpdatesResponse EmailsList = new EmailsListRecievesUpdatesResponse();
 
