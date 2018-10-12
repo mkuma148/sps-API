@@ -16,48 +16,45 @@ public class FrientMangmtService {
 
 	@Autowired
 	FriendMangmtRepo friendMangmtRepo;
-	@Autowired public FrientMangmtService(FriendMangmtRepo friendMangmtRepo) {
-		this.friendMangmtRepo=friendMangmtRepo;
-	} 
+
+	@Autowired
+	public FrientMangmtService(FriendMangmtRepo friendMangmtRepo) {
+		this.friendMangmtRepo = friendMangmtRepo;
+	}
 
 	public FriendManagementValidation addNewFriendConnection(com.capgemini.model.UserRequest userReq) {
-		System.out.println("-------333333-------------");
-		//boolean flag = friendMangmtRepo.addNewFriendConnection(userReq);
 		FriendManagementValidation fmResponse = friendMangmtRepo.addNewFriendConnection(userReq);
 		return fmResponse;
 	}
 
-	public FriendManagementValidation subscribeTargetFriend(com.capgemini.model.Subscriber subscriber)throws ResourceNotFoundException {
+	public FriendManagementValidation subscribeTargetFriend(com.capgemini.model.Subscriber subscriber)
+			throws ResourceNotFoundException {
 
 		return friendMangmtRepo.subscribeTargetFriend(subscriber);
 
 	}
-	
-	
+
 	public FriendManagementValidation unSubscribeTargetFriend(Subscriber subscriber) throws ResourceNotFoundException {
-		// TODO Auto-generated method stub
 		return friendMangmtRepo.unSubscribeTargetFriend(subscriber);
 	}
-	
-public UserFriendsListResponse getFriendList(com.capgemini.model.FriendListRequest friendListRequest) throws ResourceNotFoundException {
-		
+
+	public UserFriendsListResponse getFriendList(com.capgemini.model.FriendListRequest friendListRequest)
+			throws ResourceNotFoundException {
+
 		return friendMangmtRepo.getFriendsList(friendListRequest);
-		
+
 	}
-	
-	
 
-public CommonFriendsListResponse retrieveCommonFriendList(String email1 ,String email2) throws ResourceNotFoundException {
-		
-		return friendMangmtRepo.retrieveCommonFriendList(email1,email2);
+	public CommonFriendsListResponse retrieveCommonFriendList(String email1, String email2)
+			throws ResourceNotFoundException {
+
+		return friendMangmtRepo.retrieveCommonFriendList(email1, email2);
 	}
-	
-public EmailsListRecievesUpdatesResponse emailListRecievesupdates(com.capgemini.model.EmailsListRecievesUpdatesRequest emailsList )throws ResourceNotFoundException {
-	
-	return friendMangmtRepo.emailListRecievesupdates(emailsList);
-}
 
+	public EmailsListRecievesUpdatesResponse emailListRecievesupdates(
+			com.capgemini.model.EmailsListRecievesUpdatesRequest emailsList) throws ResourceNotFoundException {
 
-
+		return friendMangmtRepo.emailListRecievesupdates(emailsList);
+	}
 
 }

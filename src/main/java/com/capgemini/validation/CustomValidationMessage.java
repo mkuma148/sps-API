@@ -15,6 +15,7 @@ public class CustomValidationMessage{
 		messageSource.setBasename("classpath:messages");
 		messageSource.setDefaultEncoding("UTF-8");
 		return messageSource;
+		
 	}
 
 	@Bean

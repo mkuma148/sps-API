@@ -42,34 +42,26 @@ public class ExceptionHandlerControllerAdvice {
 
 		return error;
 	}
-	
-	//-------------added for global email handling ----------
-	 @ExceptionHandler
-	    @ResponseBody
-	    @ResponseStatus(HttpStatus.BAD_REQUEST)
-	    public Map handle(MethodArgumentNotValidException exception) {
-	        return error(exception.getBindingResult().getFieldErrors()
-	                .stream()
-	                .map(FieldError::getDefaultMessage)
-	                .collect(Collectors.toList()));
-	    }
 
+	// -------------added for global email handling ----------
+	@ExceptionHandler
+	@ResponseBody
+	@ResponseStatus(HttpStatus.BAD_REQUEST)
+	public Map handle(MethodArgumentNotValidException exception) {
+		return error(exception.getBindingResult().getFieldErrors().stream().map(FieldError::getDefaultMessage)
+				.collect(Collectors.toList()));
+	}
 
-	    @ExceptionHandler
-	    @ResponseBody
-	    @ResponseStatus(HttpStatus.BAD_REQUEST)
-	    public Map handle(ConstraintViolationException exception) {
-	        return error(exception.getConstraintViolations()
-	                .stream()
-	                .map(ConstraintViolation::getMessage)
-	                .collect(Collectors.toList()));
-	    }
+	@ExceptionHandler
+	@ResponseBody
+	@ResponseStatus(HttpStatus.BAD_REQUEST)
+	public Map handle(ConstraintViolationException exception) {
+		return error(exception.getConstraintViolations().stream().map(ConstraintViolation::getMessage)
+				.collect(Collectors.toList()));
+	}
 
-	    private Map error(Object message) {
-	        return Collections.singletonMap("error", message);
-	    }
-	
-	
-	
+	private Map error(Object message) {
+		return Collections.singletonMap("error", message);
+	}
 
 }

@@ -10,5 +10,6 @@ public class FriendMgmtServiceException extends Exception {
 
 	public FriendMgmtServiceException(final String message) {
 		super(message);
+
 	}
 }

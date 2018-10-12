@@ -12,7 +12,6 @@ public class ResponseUser {
 
 	public ResponseUser() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public ResponseUser(int id, String email, String friend_list, String subscription, String text_message,

@@ -6,11 +6,11 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 public class UserEmail {
-	
-	@NotNull 
-	@NotEmpty(message = "{createFriendEmail.notempty}") 
+
+	@NotNull
+	@NotEmpty(message = "{createFriendEmail.notempty}")
 	@Email(message = "{createFriendEmail.valid}")
-    @Size(max = 30, message = "{createFriendEmail.size}")
+	@Size(max = 30, message = "{createFriendEmail.size}")
 	private String email;
 
 	public String getEmail() {
@@ -20,6 +20,5 @@ public class UserEmail {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
 
 }

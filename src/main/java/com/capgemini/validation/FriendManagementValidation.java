@@ -16,6 +16,7 @@ public class FriendManagementValidation {
 		this.status = status;
 	}
 
+	
 	public String getErrorDescription() {
 		return errorDescription;
 	}

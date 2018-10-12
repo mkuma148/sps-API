@@ -50,7 +50,6 @@ public class FriendManagementController {
 	public ResponseEntity<FriendManagementValidation> newFriendConnection(@Valid @RequestBody com.capgemini.model.UserRequest userReq, BindingResult results)throws ResourceNotFoundException {
 		LOG.info("newFriendConnection :: ");
 		FriendManagementValidation fmResponse = new FriendManagementValidation();
-		//BaseResponse baseResponse = new BaseResponse();
 		ResponseEntity<FriendManagementValidation> re = null;
 		try{
 			fmResponse = frndMngtServc.addNewFriendConnection(userReq)	;

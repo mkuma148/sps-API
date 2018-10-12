@@ -1,6 +1,5 @@
 package com.capgemini.model;
 
-//@Data
 public class BaseResponse {
 	private String status;
 
