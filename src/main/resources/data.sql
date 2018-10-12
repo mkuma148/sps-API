@@ -1,4 +1,7 @@
-insert into friendmanagement values(10001,'soni.mukesh915@gmail.com', '', '', now());
-insert into friendmanagement values(10002,'ranga@gmail.com', '', '', now());
-insert into friendmanagement values(10003,'vishwanath@gmail.com', '', '',now());
-insert into friendmanagement values(10004,'som@gmail.com', '', '', now());
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('john@example.com', '', '', '', '', now());
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('andy@example.com', '', '', '', '', now());
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('lily@example.com', '', '', '', '', now());
+insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values('lucy@example.com', '', '', '', '', now()); 
+
+insert into unsubscribe(Requestor_email, Target_email, Subscription_Status) values('john@example.com', 'andy@example.com', 'Blocked');
+insert into unsubscribe(Requestor_email, Target_email, Subscription_Status) values('lily@example.com', 'lucy@example.com', 'Blocked');
