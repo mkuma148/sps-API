@@ -276,6 +276,7 @@ public class FriendMangmtRepo {
 			EmailsList.setStatus("Failed");
 		}
 		return EmailsList;
+		
 	}
 
 	/**
