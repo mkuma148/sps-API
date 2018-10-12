@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.StringJoiner;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -28,6 +30,8 @@ public class FriendMangmtRepo {
 
 	@Autowired
 	JdbcTemplate jdbcTemplate;
+	
+	private final Logger LOG = LoggerFactory.getLogger(getClass());
 
 	@Autowired
 	public FriendMangmtRepo(FriendManagementValidation fmError, JdbcTemplate jdbcTemplate) {
@@ -104,7 +108,7 @@ public class FriendMangmtRepo {
 			throws ResourceNotFoundException {
 
 		UserFriendsListResponse emailListresponse = new UserFriendsListResponse();
-		System.out.println("----getFriendList-----" + friendListRequest.getEmail());
+		LOG.info("----getFriendList-----" + friendListRequest.getEmail());
 		String friendList = getFriendList(friendListRequest.getEmail());
 		if ("".equals(friendList) || friendList == null) {
 			emailListresponse.setStatus("Failed");
@@ -434,7 +438,7 @@ public class FriendMangmtRepo {
 		if (Arrays.asList(requestorFriends).contains(targetId) && Arrays.asList(targetFriends).contains(requestorId)) {
 			alreadyFriend = true;
 		}
-		System.out.println("alreadyFriend " + alreadyFriend);
+		LOG.info("alreadyFriend " + alreadyFriend);
 		return alreadyFriend;
 
 	}
@@ -477,7 +481,7 @@ public class FriendMangmtRepo {
 			String sqlrFriendList = "SELECT Subscription_Status FROM unsubscribe WHERE Requestor_email=? AND Target_email=?";
 			String Subscription_Status = (String) jdbcTemplate.queryForObject(sqlrFriendList,
 					new Object[] { requestor_email, target_email }, String.class);
-			System.out.println("Subscription_Status " + Subscription_Status);
+			LOG.info("Subscription_Status " + Subscription_Status);
 			if (Subscription_Status.equalsIgnoreCase("Blocked")) {
 				status = true;
 			}
