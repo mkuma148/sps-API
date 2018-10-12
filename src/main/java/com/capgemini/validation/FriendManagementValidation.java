@@ -17,22 +17,24 @@ public class FriendManagementValidation {
 	}
 
 	
-	public String getErrorDescription() {
+	
+	
+	public String getDescription() {
 		return description;
 	}
 
-	public void setErrorDescription(String description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
-	
+
 	public FriendManagementValidation() {
 		
 	}
 	
-	public FriendManagementValidation(String status, String errorDescription) {
+	public FriendManagementValidation(String status, String description) {
 		super();
 		this.status = status;
-		this.description = errorDescription;
+		this.description = description;
 	}
 	
 	

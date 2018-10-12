@@ -59,10 +59,10 @@ public class FriendMangmtRepo {
 
 			final List<String> emails = jdbcTemplate.queryForList(query, String.class);
 			friendMgmtValidation.setStatus("Success");
-			friendMgmtValidation.setErrorDescription("Successfully connected");
+			friendMgmtValidation.setDescription("Successfully connected");
 			if (requestor.equals(target)) {
 				friendMgmtValidation.setStatus("Failed");
-				friendMgmtValidation.setErrorDescription("Requestor and target should not be same");
+				friendMgmtValidation.setDescription("Requestor and target should not be same");
 				return friendMgmtValidation;
 			}
 
@@ -72,14 +72,14 @@ public class FriendMangmtRepo {
 				if (!isBlocked) {
 					if (isAlreadyFriend(requestor, target)) {
 						friendMgmtValidation.setStatus("Failed");
-						friendMgmtValidation.setErrorDescription("Already friends");
+						friendMgmtValidation.setDescription("Already friends");
 					} else {
 						connectFriend(requestor, target);
 						connectFriend(target, requestor);
 					}
 				} else {
 					friendMgmtValidation.setStatus("Failed");
-					friendMgmtValidation.setErrorDescription("target blocked");
+					friendMgmtValidation.setDescription("target blocked");
 				}
 			} else if (!emails.contains(requestor) && !emails.contains(target)) {
 				insertEmail(requestor);
@@ -189,11 +189,11 @@ public class FriendMangmtRepo {
 
 		if (requestor.equals(target)) {
 			friendMgmtValidation.setStatus("Failed");
-			friendMgmtValidation.setErrorDescription("Requestor and target should not be same");
+			friendMgmtValidation.setDescription("Requestor and target should not be same");
 			return friendMgmtValidation;
 		}
 		friendMgmtValidation.setStatus("Success");
-		friendMgmtValidation.setErrorDescription("Subscribed successfully");
+		friendMgmtValidation.setDescription("Subscribed successfully");
 		boolean isBlocked = isBlocked(requestor, target);
 		if (!isBlocked) {
 			if (emails.contains(target) && emails.contains(requestor)) {
@@ -216,17 +216,17 @@ public class FriendMangmtRepo {
 
 					} else {
 						friendMgmtValidation.setStatus("Failed");
-						friendMgmtValidation.setErrorDescription("Target already subscribed");
+						friendMgmtValidation.setDescription("Target already subscribed");
 					}
 				}
 
 			} else {
 				friendMgmtValidation.setStatus("Failed");
-				friendMgmtValidation.setErrorDescription("Check Target or Requestor email id");
+				friendMgmtValidation.setDescription("Check Target or Requestor email id");
 			}
 		} else {
 			friendMgmtValidation.setStatus("Failed");
-			friendMgmtValidation.setErrorDescription("target blocked");
+			friendMgmtValidation.setDescription("target blocked");
 		}
 		return friendMgmtValidation;
 	}
@@ -308,7 +308,7 @@ public class FriendMangmtRepo {
 			String subscribers = (String) jdbcTemplate.queryForObject(sql, new Object[] { requestor }, String.class);
 			if (subscribers == null || subscribers.isEmpty()) {
 				friendMgmtValidation.setStatus("Failed");
-				friendMgmtValidation.setErrorDescription("Requestor does not subscribe to any email");
+				friendMgmtValidation.setDescription("Requestor does not subscribe to any email");
 			} else {
 				// unsubscribeTarget(email);
 				String[] subs = subscribers.split(",");
@@ -343,15 +343,15 @@ public class FriendMangmtRepo {
 					updateUnsubscribeTable(requestor, target, "Blocked");
 
 					friendMgmtValidation.setStatus("Success");
-					friendMgmtValidation.setErrorDescription("Unsubscribed successfully");
+					friendMgmtValidation.setDescription("Unsubscribed successfully");
 				} else {
 					friendMgmtValidation.setStatus("Failed");
-					friendMgmtValidation.setErrorDescription("No Target available");
+					friendMgmtValidation.setDescription("No Target available");
 				}
 			}
 		} else {
 			friendMgmtValidation.setStatus("Failed");
-			friendMgmtValidation.setErrorDescription("Please provide valid Requestor and Target email");
+			friendMgmtValidation.setDescription("Please provide valid Requestor and Target email");
 		}
 		return friendMgmtValidation;
 	}

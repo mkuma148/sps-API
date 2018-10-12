@@ -272,12 +272,12 @@ public class FriendManagementController {
 	private ResponseEntity<FriendManagementValidation> handleValidation(BindingResult result) {
 		fmError.setStatus("Failed");
 		if (result.getFieldError("requestor") != null && result.getFieldError("target") != null) {
-			fmError.setErrorDescription(result.getFieldError("requestor").getDefaultMessage() + " "
+			fmError.setDescription(result.getFieldError("requestor").getDefaultMessage() + " "
 					+ result.getFieldError("target").getDefaultMessage());
 		} else if (result.getFieldError("target") != null) {
-			fmError.setErrorDescription(result.getFieldError("target").getDefaultMessage());
+			fmError.setDescription(result.getFieldError("target").getDefaultMessage());
 		} else {
-			fmError.setErrorDescription(result.getFieldError("requestor").getDefaultMessage());
+			fmError.setDescription(result.getFieldError("requestor").getDefaultMessage());
 
 		}
 		return new ResponseEntity<FriendManagementValidation>(fmError, HttpStatus.BAD_REQUEST);
