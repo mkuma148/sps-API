@@ -234,7 +234,7 @@ public class FriendManagementController {
 	 * @throws ResourceNotFoundException
 	 */
 
-	@RequestMapping(value = "/friends/updatelist", method = RequestMethod.POST)
+	@RequestMapping(value = "/allEmailAddress", method = RequestMethod.POST)
 	public ResponseEntity<EmailsListRecievesUpdatesResponse> emailListRecievesupdates(
 			@Valid @RequestBody com.capgemini.model.EmailsListRecievesUpdatesRequest emailsList, BindingResult result)
 			throws ResourceNotFoundException {
@@ -290,7 +290,6 @@ public class FriendManagementController {
 	 * @param subscriber
 	 * @return
 	 */
-
 	private boolean validateInput(Subscriber subscriber) {
 		final String requestor = subscriber.getRequestor();
 		final String target = subscriber.getTarget();
