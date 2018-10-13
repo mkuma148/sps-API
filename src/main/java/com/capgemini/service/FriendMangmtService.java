@@ -37,7 +37,7 @@ public class FriendMangmtService {
 			throws ResourceNotFoundException {
 		LOG.info(":: In Service class .. subscribeTargetFriend()");
 
-		return friendMangmtRepository.subscribeTargetFriend(subscriber);
+		return friendMangmtRepository.subscribeFriend(subscriber);
 
 	}
 
@@ -51,7 +51,7 @@ public class FriendMangmtService {
 			throws ResourceNotFoundException {
 		LOG.info(":: In Service class .. getFriendList()");
 
-		return friendMangmtRepository.getFriendsList(friendListRequest);
+		return friendMangmtRepository.getMutualFriends(friendListRequest);
 
 	}
 

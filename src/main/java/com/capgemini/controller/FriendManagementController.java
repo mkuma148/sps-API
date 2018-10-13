@@ -123,7 +123,7 @@ public class FriendManagementController {
 	 * @throws ResourceNotFoundException
 	 */
 
-	@RequestMapping(value = "/friends", method = RequestMethod.POST)
+	@RequestMapping(value = "/commonFriends", method = RequestMethod.POST)
 	public ResponseEntity<CommonFriendsListResponse> getCommonFriendList(
 			@Valid @RequestBody com.capgemini.model.CommonFriendsListRequest commonFrndReq)
 			throws ResourceNotFoundException {
