@@ -106,6 +106,7 @@ H2 Database (In memory database)
 
 
 #4. 	Person subscribe to another Person
+
 	   a.	URI:  https://sps-test.cfapps.io/friendmgt/api/subscribe
 	   b.	Method: POST
 	   c.	 Header: Content Type – Application/Json
@@ -125,6 +126,7 @@ H2 Database (In memory database)
 	      •	400: Bad Request
 
 #5.	 Person block updates from another Person
+
 	   a.	   URI:  https://sps-test.cfapps.io/friendmgt/api/unsubscribe
 	   b.	Method: POST
 	   c.	 Header: Content Type – Application/Json
@@ -144,6 +146,7 @@ H2 Database (In memory database)
 	      •	400: Bad Request
 
 #6.	  Post an update which returns a list of emails that will receive the update.
+
 	   a.	 URI:  https://sps-test.cfapps.io/friendmgt/api/allEmailAddress 
 	   b.	Method: POST 
 	   c.	Header: Content Type – Application/Json 
