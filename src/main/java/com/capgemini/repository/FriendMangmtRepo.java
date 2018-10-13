@@ -115,7 +115,10 @@ public class FriendMangmtRepo {
 	public UserFriendsListResponse getFriendsList(com.capgemini.model.FriendListRequest friendListRequest)
 			throws ResourceNotFoundException {
 
+		String query = "SELECT email FROM friendmanagement";
+		List<String> emails = jdbcTemplate.queryForList(query, String.class);
 		UserFriendsListResponse emailListresponse = new UserFriendsListResponse();
+		if(emails.contains(friendListRequest.getEmail())) {
 		LOG.info("----getFriendList-----" + friendListRequest.getEmail());
 		String friendList = getFriendList(friendListRequest.getEmail());
 		if ("".equals(friendList) || friendList == null) {
@@ -134,6 +137,10 @@ public class FriendMangmtRepo {
 				}
 			}
 		}
+		}else {
+			friendMgmtValidation.setStatus("Failed");
+			friendMgmtValidation.setDescription("Email Id does not exists");
+		}
 		return emailListresponse;
 
 	}
@@ -148,25 +155,40 @@ public class FriendMangmtRepo {
 	public CommonFriendsListResponse retrieveCommonFriendList(String email1, String email2)
 			throws ResourceNotFoundException {
 		CommonFriendsListResponse commonFrndListresponse = new CommonFriendsListResponse();
-
+        
+		String query = "SELECT email FROM friendmanagement";
+		List<String> emails = jdbcTemplate.queryForList(query, String.class);
+		if(emails.contains(email1) && emails.contains(email2)) {
+		
 		String friendList1 = getFriendList(email1);
 		String friendList2 = getFriendList(email2);
+		
+		System.out.println("friend1Set "+friendList1);
+		System.out.println("friend2Set "+friendList2);
+		
 		String[] friendList1Container = friendList1.split(",");
 		String[] friendList2Container = friendList2.split(",");
 
 		Set<String> friend1Set = new HashSet<String>(Arrays.asList(friendList1Container));
 		Set<String> friend2Set = new HashSet<String>(Arrays.asList(friendList2Container));
+		
+		System.out.println("friend1Set "+friend1Set);
+		System.out.println("friend2Set "+friend2Set);
+		
 		friend1Set.retainAll(friend2Set);
 
 		List<String> friends = getEmailByIds(new ArrayList<String>(friend1Set));
 		if (friends.size() == 0) {
-
+			commonFrndListresponse.setStatus("Failed");
 		} else {
 			commonFrndListresponse.setStatus("Success");
 			commonFrndListresponse.setCount(friends.size());
 			for (String friend : friends) {
 				commonFrndListresponse.getFriends().add(friend);
 			}
+		}
+		}else {
+			commonFrndListresponse.setStatus("Failed");
 		}
 		return commonFrndListresponse;
 	}
@@ -415,7 +437,7 @@ public class FriendMangmtRepo {
 	 * @param firstEmail
 	 * @param secondEmail
 	 */
-	private void connectFriend(String firstEmail, String secondEmail) {
+	private void connectFriend(String firstEmail, String secondEmail) throws ResourceNotFoundException{
 		String requestorId = getId(firstEmail);
 		String friendList = getFriendList(secondEmail);
 
@@ -432,7 +454,7 @@ public class FriendMangmtRepo {
 	 * @param target
 	 * @return
 	 */
-	private boolean isAlreadyFriend(String requestor, String target) {
+	private boolean isAlreadyFriend(String requestor, String target) throws ResourceNotFoundException{
 		boolean alreadyFriend = false;
 
 		String requestorId = getId(requestor);
@@ -470,9 +492,10 @@ public class FriendMangmtRepo {
 	 * @param email
 	 * @return
 	 */
-	private String getFriendList(String email) {
+	private String getFriendList(String email) throws ResourceNotFoundException{
+		String friendList="";
 		String sqlrFriendList = "SELECT friend_list FROM friendmanagement WHERE email=?";
-		String friendList = (String) jdbcTemplate.queryForObject(sqlrFriendList, new Object[] { email }, String.class);
+		friendList = (String) jdbcTemplate.queryForObject(sqlrFriendList, new Object[] { email }, String.class);
 		return friendList;
 
 	}
