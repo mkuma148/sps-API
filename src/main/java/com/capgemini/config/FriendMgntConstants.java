@@ -20,4 +20,5 @@ public final class FriendMgntConstants {
 	 public static final String FRIEND_MANAGEMENT_BLOCKED = "Blocked";
 	 public static final String FRIEND_MANAGEMENT_NO_TARGET = "No Target available";
 	 public static final String FRIEND_MANAGEMENT_INVALID_EMAIL = "Please provide valid Requestor and Target email";
+	 public static final String FRIEND_MANAGEMENT_COMMA = ",";
 }

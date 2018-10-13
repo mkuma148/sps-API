@@ -121,7 +121,7 @@ public class FriendMangmtRepo {
 				emailListresponse.setStatus(FRIEND_MANAGEMENT_FAILED);
 				emailListresponse.setCount(0);
 			} else {
-				String[] friendListQueryParam = friendList.split(",");
+				String[] friendListQueryParam = friendList.split(FRIEND_MANAGEMENT_COMMA);
 				List<String> friends = getEmailByIds(Arrays.asList(friendListQueryParam));
 				if (friends.size() == 0) {
 
@@ -157,8 +157,8 @@ public class FriendMangmtRepo {
 			String friendList1 = getFriendList(email1);
 			String friendList2 = getFriendList(email2);
 
-			String[] friendList1Container = friendList1.split(",");
-			String[] friendList2Container = friendList2.split(",");
+			String[] friendList1Container = friendList1.split(FRIEND_MANAGEMENT_COMMA);
+			String[] friendList2Container = friendList2.split(FRIEND_MANAGEMENT_COMMA);
 
 			Set<String> friend1Set = new HashSet<String>(Arrays.asList(friendList1Container));
 			Set<String> friend2Set = new HashSet<String>(Arrays.asList(friendList2Container));
@@ -213,11 +213,11 @@ public class FriendMangmtRepo {
 					updateSubscribedBy(requestor, target);
 
 				} else {
-					String[] subs = subscribers.split(",");
+					String[] subs = subscribers.split(FRIEND_MANAGEMENT_COMMA);
 					ArrayList<String> al = new ArrayList<String>(Arrays.asList(subs));
 
 					if (!al.contains(targetId)) {
-						targetId = subscribers + "," + targetId;
+						targetId = subscribers + FRIEND_MANAGEMENT_COMMA + targetId;
 						updateQueryForSubscriber(targetId, requestor);
 
 						updateSubscribedBy(requestor, target);
@@ -261,11 +261,11 @@ public class FriendMangmtRepo {
 				friendMgmtValidation.setStatus(FRIEND_MANAGEMENT_FAILED);
 				friendMgmtValidation.setDescription(FRIEND_MANAGEMENT_REQUESTOR_NOT_SUBSCRIBED);
 			} else {
-				String[] subs = subscribers.split(",");
+				String[] subs = subscribers.split(FRIEND_MANAGEMENT_COMMA);
 				ArrayList<String> subscriberList = new ArrayList<>(Arrays.asList(subs));
 				String targetId = getId(target);
 				if (subscriberList.contains(targetId)) {
-					StringJoiner sjTarget = new StringJoiner(",");
+					StringJoiner sjTarget = new StringJoiner(FRIEND_MANAGEMENT_COMMA);
 					for (String sub : subscriberList) {
 						if (!sub.equals(targetId)) {
 							sjTarget.add(sub);
@@ -274,11 +274,11 @@ public class FriendMangmtRepo {
 					updateQueryForSubscriber(sjTarget.toString(), requestor);
 
 					final String subscribedBys = getSubscribedByList(target);
-					String[] subscribedBy = subscribedBys.split(",");
+					String[] subscribedBy = subscribedBys.split(FRIEND_MANAGEMENT_COMMA);
 					ArrayList<String> subscribedByList = new ArrayList<>(Arrays.asList(subscribedBy));
 					String requestorId = getId(requestor);
 					if (subscribedByList.contains(requestorId)) {
-						StringJoiner sjRequestor = new StringJoiner(",");
+						StringJoiner sjRequestor = new StringJoiner(FRIEND_MANAGEMENT_COMMA);
 						for (String sub : subscribedByList) {
 							if (!sub.equals(requestorId)) {
 								sjRequestor.add(sub);
@@ -332,11 +332,11 @@ public class FriendMangmtRepo {
 			}
 
 			String friendList = getFriendList(sender);
-			String[] senderFriends = friendList.split(",");
+			String[] senderFriends = friendList.split(FRIEND_MANAGEMENT_COMMA);
 			LOG.info("senderFriends "+senderFriends[0]);
 
 			String subscribedBy = getSubscribedByList(sender);
-			String[] subscribedFriends = subscribedBy.split(",");
+			String[] subscribedFriends = subscribedBy.split(FRIEND_MANAGEMENT_COMMA);
 			LOG.info("subscribedFriends "+subscribedFriends[0]);
 
 			Set<String> set = new HashSet<String>();
@@ -388,7 +388,7 @@ public class FriendMangmtRepo {
 	 */
 	private List<String> getEmailByIds(final List<String> friendListQueryParam) {
 
-		StringJoiner email_Ids = new StringJoiner(",", "SELECT email FROM friendmanagement WHERE id in (", ")");
+		StringJoiner email_Ids = new StringJoiner(FRIEND_MANAGEMENT_COMMA, "SELECT email FROM friendmanagement WHERE id in (", ")");
 
 		for (String friendId : friendListQueryParam) {
 			email_Ids.add(friendId);
@@ -434,7 +434,7 @@ public class FriendMangmtRepo {
 		String requestorId = getId(firstEmail);
 		String friendList = getFriendList(secondEmail);
 
-		friendList = friendList.isEmpty() ? requestorId : friendList + "," + requestorId;
+		friendList = friendList.isEmpty() ? requestorId : friendList + FRIEND_MANAGEMENT_COMMA + requestorId;
 
 		jdbcTemplate.update("update friendmanagement " + " set friend_list = ?" + " where email = ?",
 				new Object[] { friendList, secondEmail });
@@ -453,10 +453,10 @@ public class FriendMangmtRepo {
 		String targetId = getId(target);
 
 		String requestorFriendList = getFriendList(requestor);
-		String[] requestorFriends = requestorFriendList.split(",");
+		String[] requestorFriends = requestorFriendList.split(FRIEND_MANAGEMENT_COMMA);
 
 		String targetFirendList = getFriendList(target);
-		String[] targetFriends = targetFirendList.split(",");
+		String[] targetFriends = targetFirendList.split(FRIEND_MANAGEMENT_COMMA);
 
 		if (Arrays.asList(requestorFriends).contains(targetId) && Arrays.asList(targetFriends).contains(requestorId)) {
 			alreadyFriend = true;
@@ -507,7 +507,7 @@ public class FriendMangmtRepo {
 			final String Subscription_Status = (String) jdbcTemplate.queryForObject(sqlrFriendList,
 					new Object[] { requestor_email, target_email }, String.class);
 			LOG.info(":: Subscription_Status " + Subscription_Status);
-			if (Subscription_Status.equalsIgnoreCase("Blocked")) {
+			if (Subscription_Status.equalsIgnoreCase(FRIEND_MANAGEMENT_BLOCKED)) {
 				status = true;
 			}
 		} catch (Exception e) {
@@ -542,11 +542,11 @@ public class FriendMangmtRepo {
 		if (subscribedList.isEmpty()) {
 			updateQueryForSubscribedBy(requestorId, target);
 		} else {
-			String[] subscr = subscribedList.split(",");
+			String[] subscr = subscribedList.split(FRIEND_MANAGEMENT_COMMA);
 			ArrayList<String> subscrList = new ArrayList<String>(Arrays.asList(subscr));
 
 			if (!subscrList.contains(requestorId)) {
-				requestorId = subscribedList + "," + requestorId;
+				requestorId = subscribedList + FRIEND_MANAGEMENT_COMMA + requestorId;
 				updateQueryForSubscribedBy(requestorId, target);
 			}
 		}
