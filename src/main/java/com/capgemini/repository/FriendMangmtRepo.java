@@ -48,16 +48,15 @@ public class FriendMangmtRepo {
 	 * @param userReq
 	 * @return
 	 */
-	public FriendManagementValidation addNewFriendConnection(com.capgemini.model.UserRequest userReq)
+	public FriendManagementValidation addNewFriendConnection(final com.capgemini.model.UserRequest userReq)
 			throws ResourceNotFoundException {
 		try {
 
 			final String requestor = userReq.getRequestor();
 			final String target = userReq.getTarget();
 
-			final String query = "SELECT email FROM friendmanagement";
-
-			final List<String> emails = jdbcTemplate.queryForList(query, String.class);
+			List<String> emails = getListOfAllEmails();
+			
 			friendMgmtValidation.setStatus("Success");
 			friendMgmtValidation.setDescription("Successfully connected");
 			if (requestor.equals(target)) {
@@ -115,8 +114,7 @@ public class FriendMangmtRepo {
 	public UserFriendsListResponse getFriendsList(com.capgemini.model.FriendListRequest friendListRequest)
 			throws ResourceNotFoundException {
 
-		String query = "SELECT email FROM friendmanagement";
-		List<String> emails = jdbcTemplate.queryForList(query, String.class);
+		List<String> emails = getListOfAllEmails();
 		UserFriendsListResponse emailListresponse = new UserFriendsListResponse();
 		if(emails.contains(friendListRequest.getEmail())) {
 		LOG.info("----getFriendList-----" + friendListRequest.getEmail());
@@ -156,8 +154,7 @@ public class FriendMangmtRepo {
 			throws ResourceNotFoundException {
 		CommonFriendsListResponse commonFrndListresponse = new CommonFriendsListResponse();
         
-		String query = "SELECT email FROM friendmanagement";
-		List<String> emails = jdbcTemplate.queryForList(query, String.class);
+		List<String> emails = getListOfAllEmails();
 		if(emails.contains(email1) && emails.contains(email2)) {
 		
 		String friendList1 = getFriendList(email1);
@@ -203,11 +200,10 @@ public class FriendMangmtRepo {
 	public FriendManagementValidation subscribeTargetFriend(com.capgemini.model.Subscriber subscriber)
 			throws ResourceNotFoundException {
 
-		String requestor = subscriber.getRequestor();
-		String target = subscriber.getTarget();
+		final String requestor = subscriber.getRequestor();
+		final String target = subscriber.getTarget();
 
-		String query = "SELECT email FROM friendmanagement";
-		List<String> emails = jdbcTemplate.queryForList(query, String.class);
+		List<String> emails = getListOfAllEmails();
 
 		if (requestor.equals(target)) {
 			friendMgmtValidation.setStatus("Failed");
@@ -252,63 +248,8 @@ public class FriendMangmtRepo {
 		}
 		return friendMgmtValidation;
 	}
-
-	/**
-	 * This API is invoked to retrive all email address that can receive updates
-	 * from an email address
-	 * 
-	 * @param emailsList
-	 * @return
-	 */
-	public EmailsListRecievesUpdatesResponse emailListRecievesupdates(
-			com.capgemini.model.EmailsListRecievesUpdatesRequest emailsList) throws ResourceNotFoundException {
-
-		EmailsListRecievesUpdatesResponse EmailsList = new EmailsListRecievesUpdatesResponse();
-
-		String query = "SELECT email FROM friendmanagement";
-		List<String> emails = jdbcTemplate.queryForList(query, String.class);
-		String sender = emailsList.getSender();
-		String text = emailsList.getText();
-		text = text.trim();
-		String reciever = text.substring(text.lastIndexOf(' ') + 1).substring(1);
-
-		if (emails.contains(sender)) {
-			if (emails.contains(reciever)) {
-				String recieverId = getId(reciever);
-				updateQueryForUpdated(recieverId, sender);
-			} else {
-				insertEmail(reciever);
-				String recieverId = getId(reciever);
-				updateQueryForUpdated(recieverId, sender);
-			}
-
-			String friendList = getFriendList(sender);
-			String[] senderFriends = friendList.split(",");
-
-			String subscribedBy = getSubscribedByList(sender);
-			String[] subscribedFriends = subscribedBy.split(",");
-
-			Set<String> set = new HashSet<String>();
-			set.addAll(Arrays.asList(senderFriends));
-			set.addAll(Arrays.asList(subscribedFriends));
-			List<String> emailsUnion = new ArrayList<String>(set);
-
-			List<String> commonEmails = getEmailByIds(emailsUnion);
-
-			if (!commonEmails.contains(reciever)) {
-				commonEmails.add(reciever);
-			}
-
-			EmailsList.setStatus("Success");
-			for (String email : commonEmails) {
-				EmailsList.getFriends().add(email);
-			}
-		} else {
-			EmailsList.setStatus("Failed");
-		}
-		return EmailsList;
-	}
-
+	
+	
 	/**
 	 * This API is invoked to unsubscribe and remove id from subscribe and
 	 * subscribedBy column
@@ -317,13 +258,12 @@ public class FriendMangmtRepo {
 	 * @return
 	 * @throws ResourceNotFoundException
 	 */
-	public FriendManagementValidation unSubscribeTargetFriend(com.capgemini.model.Subscriber subscriber)
+	public FriendManagementValidation unSubscribeTargetFriend(final com.capgemini.model.Subscriber subscriber)
 			throws ResourceNotFoundException {
-		String requestor = subscriber.getRequestor();
-		String target = subscriber.getTarget();
+		final String requestor = subscriber.getRequestor();
+		final String target = subscriber.getTarget();
 
-		String query = "SELECT email FROM friendmanagement";
-		List<String> emails = jdbcTemplate.queryForList(query, String.class);
+		List<String> emails = getListOfAllEmails();
 
 		if (emails.contains(requestor) && emails.contains(target)) {
 			String sql = "SELECT subscriber FROM friendmanagement WHERE email=?";
@@ -346,8 +286,8 @@ public class FriendMangmtRepo {
 					updateQueryForSubscriber(sjTarget.toString(), requestor);
 
 					// This section is used to remove requestor id from subscribedBy column
-					String sqlQuery = "SELECT subscribedBy FROM friendmanagement WHERE email=?";
-					String subscribedBys = (String) jdbcTemplate.queryForObject(sqlQuery, new Object[] { target },
+					final String sqlQuery = "SELECT subscribedBy FROM friendmanagement WHERE email=?";
+					final String subscribedBys = (String) jdbcTemplate.queryForObject(sqlQuery, new Object[] { target },
 							String.class);
 					String[] subscribedBy = subscribedBys.split(",");
 					ArrayList<String> subscribedByList = new ArrayList<>(Arrays.asList(subscribedBy));
@@ -377,6 +317,74 @@ public class FriendMangmtRepo {
 		}
 		return friendMgmtValidation;
 	}
+	
+
+	/**
+	 * This API is invoked to retrive all email address that can receive updates
+	 * from an email address
+	 * 
+	 * @param emailsList
+	 * @return
+	 */
+	public EmailsListRecievesUpdatesResponse emailListRecievesupdates(
+			final com.capgemini.model.EmailsListRecievesUpdatesRequest emailsList) throws ResourceNotFoundException {
+
+		EmailsListRecievesUpdatesResponse EmailsList = new EmailsListRecievesUpdatesResponse();
+
+		List<String> emails = getListOfAllEmails();
+		String sender = emailsList.getSender();
+		String text = emailsList.getText();
+		text = text.trim();
+		String reciever = text.substring(text.lastIndexOf(' ') + 1).substring(1);
+
+		if (emails.contains(sender)) {
+			if (emails.contains(reciever)) {
+				String recieverId = getId(reciever);
+				updateQueryForUpdated(recieverId, sender);
+			} else {
+				insertEmail(reciever);
+				String recieverId = getId(reciever);
+				updateQueryForUpdated(recieverId, sender);
+			}
+
+			String friendList = getFriendList(sender);
+			String[] senderFriends = friendList.split(",");
+			LOG.info("senderFriends "+senderFriends[0]);
+
+			String subscribedBy = getSubscribedByList(sender);
+			String[] subscribedFriends = subscribedBy.split(",");
+			LOG.info("subscribedFriends "+subscribedFriends[0]);
+            
+			Set<String> set = new HashSet<String>();
+			if(senderFriends[0].equals("") && subscribedFriends[0].equals("")) {
+				
+			}else if(senderFriends[0].equals("")) {
+				set.addAll(Arrays.asList(subscribedFriends));
+			}else if(subscribedFriends[0].equals("")){
+				set.addAll(Arrays.asList(senderFriends));
+			}else {
+				set.addAll(Arrays.asList(senderFriends));
+			    set.addAll(Arrays.asList(subscribedFriends));
+			}
+			
+			List<String> emailsUnion = new ArrayList<String>(set);
+			List<String> commonEmails = getEmailByIds(emailsUnion);
+			
+			if (!commonEmails.contains(reciever)) {
+				commonEmails.add(reciever);
+			}
+
+			EmailsList.setStatus("Success");
+			for (String email : commonEmails) {
+				EmailsList.getFriends().add(email);
+			}
+		} else {
+			EmailsList.setStatus("Failed");
+		}
+		return EmailsList;
+	}
+
+	
 
 	/**
 	 * This method is invoked to insert new record in a friendmanagement table
@@ -384,7 +392,7 @@ public class FriendMangmtRepo {
 	 * @param email
 	 * @return
 	 */
-	private int insertEmail(String email) {
+	private int insertEmail(final String email) {
 		return jdbcTemplate.update(
 				"insert into friendmanagement(email, friend_list, subscriber, subscribedBy, updated, updated_timestamp) values(?,?,?,?,?,?)",
 				new Object[] { email, "", "", "", "", new Timestamp((new Date()).getTime()) });
@@ -396,7 +404,7 @@ public class FriendMangmtRepo {
 	 * @param friendListQueryParam
 	 * @return
 	 */
-	private List<String> getEmailByIds(List<String> friendListQueryParam) {
+	private List<String> getEmailByIds(final List<String> friendListQueryParam) {
 
 		StringJoiner email_Ids = new StringJoiner(",", "SELECT email FROM friendmanagement WHERE id in (", ")");
 
@@ -413,9 +421,10 @@ public class FriendMangmtRepo {
 	 * @param email
 	 * @return
 	 */
-	private String getSubscriptionList(String email) {
+	private String getSubscriptionList(final String email) {
+		String friendList="";
 		String sqlrFriendList = "SELECT subscriber FROM friendmanagement WHERE email=?";
-		String friendList = (String) jdbcTemplate.queryForObject(sqlrFriendList, new Object[] { email }, String.class);
+		friendList = (String) jdbcTemplate.queryForObject(sqlrFriendList, new Object[] { email }, String.class);
 		return friendList;
 	}
 
@@ -425,9 +434,14 @@ public class FriendMangmtRepo {
 	 * @param email
 	 * @return
 	 */
-	private String getSubscribedByList(String email) {
+	private String getSubscribedByList(final String email) {
+		String friendList="";
+		try {
 		String sqlrFriendList = "SELECT subscribedBy FROM friendmanagement WHERE email=?";
-		String friendList = (String) jdbcTemplate.queryForObject(sqlrFriendList, new Object[] { email }, String.class);
+		friendList = (String) jdbcTemplate.queryForObject(sqlrFriendList, new Object[] { email }, String.class);
+		}catch(Exception e) {
+			  LOG.debug("Exeption raised "+e.getMessage());
+		}
 		return friendList;
 	}
 
@@ -437,7 +451,7 @@ public class FriendMangmtRepo {
 	 * @param firstEmail
 	 * @param secondEmail
 	 */
-	private void connectFriend(String firstEmail, String secondEmail) throws ResourceNotFoundException{
+	private void connectFriend(final String firstEmail, final String secondEmail) throws ResourceNotFoundException{
 		String requestorId = getId(firstEmail);
 		String friendList = getFriendList(secondEmail);
 
@@ -454,7 +468,7 @@ public class FriendMangmtRepo {
 	 * @param target
 	 * @return
 	 */
-	private boolean isAlreadyFriend(String requestor, String target) throws ResourceNotFoundException{
+	private boolean isAlreadyFriend(final String requestor, final String target) throws ResourceNotFoundException{
 		boolean alreadyFriend = false;
 
 		String requestorId = getId(requestor);
@@ -480,9 +494,9 @@ public class FriendMangmtRepo {
 	 * @param email
 	 * @return
 	 */
-	private String getId(String email) {
-		String sql = "SELECT id FROM friendmanagement WHERE email=?";
-		String requestorId = (String) jdbcTemplate.queryForObject(sql, new Object[] { email }, String.class);
+	private String getId(final String email) {
+		final String sql = "SELECT id FROM friendmanagement WHERE email=?";
+		final String requestorId = (String) jdbcTemplate.queryForObject(sql, new Object[] { email }, String.class);
 		return requestorId;
 	}
 
@@ -492,10 +506,14 @@ public class FriendMangmtRepo {
 	 * @param email
 	 * @return
 	 */
-	private String getFriendList(String email) throws ResourceNotFoundException{
+	private String getFriendList(final String email) throws ResourceNotFoundException{
 		String friendList="";
+		try {
 		String sqlrFriendList = "SELECT friend_list FROM friendmanagement WHERE email=?";
 		friendList = (String) jdbcTemplate.queryForObject(sqlrFriendList, new Object[] { email }, String.class);
+		}catch(Exception e) {
+		  LOG.debug("Exeption raised "+e.getMessage());
+		}
 		return friendList;
 
 	}
@@ -507,11 +525,11 @@ public class FriendMangmtRepo {
 	 * @param target_email
 	 * @return
 	 */
-	private boolean isBlocked(String requestor_email, String target_email) {
+	private boolean isBlocked(final String requestor_email, final String target_email) {
 		boolean status = false;
 		try {
-			String sqlrFriendList = "SELECT Subscription_Status FROM unsubscribe WHERE Requestor_email=? AND Target_email=?";
-			String Subscription_Status = (String) jdbcTemplate.queryForObject(sqlrFriendList,
+			final String sqlrFriendList = "SELECT Subscription_Status FROM unsubscribe WHERE Requestor_email=? AND Target_email=?";
+			final String Subscription_Status = (String) jdbcTemplate.queryForObject(sqlrFriendList,
 					new Object[] { requestor_email, target_email }, String.class);
 			LOG.info(":: Subscription_Status " + Subscription_Status);
 			if (Subscription_Status.equalsIgnoreCase("Blocked")) {
@@ -524,7 +542,7 @@ public class FriendMangmtRepo {
 		return status;
 	}
 
-	private void updateUnsubscribeTable(String requestor, String target, String status) {
+	private void updateUnsubscribeTable(final String requestor, final String target, String status) {
 		jdbcTemplate.update(
 				"insert into UNSUBSCRIBE(Requestor_email, Target_email, Subscription_Status) values(?, ?, ?)",
 				new Object[] { requestor, target, status });
@@ -536,7 +554,7 @@ public class FriendMangmtRepo {
 	 * @param requestor
 	 * @param target
 	 */
-	private void updateSubscribedBy(String requestor, String target) {
+	private void updateSubscribedBy(final String requestor, final String target) {
 		String requestorId = getId(requestor);
 		String subscribedList = getSubscribedByList(target);
 		if (subscribedList.isEmpty()) {
@@ -552,19 +570,25 @@ public class FriendMangmtRepo {
 		}
 	}
 
-	private void updateQueryForSubscriber(String targetId, String requestor) {
+	private void updateQueryForSubscriber(final String targetId, final String requestor) {
 		jdbcTemplate.update("update friendmanagement " + " set subscriber = ? " + " where email = ?",
 				new Object[] { targetId, requestor });
 	}
 
-	private void updateQueryForSubscribedBy(String requestorId, String target) {
+	private void updateQueryForSubscribedBy(final String requestorId, final String target) {
 		jdbcTemplate.update("update friendmanagement " + " set subscribedBy = ? " + " where email = ?",
 				new Object[] { requestorId, target });
 	}
 
-	private void updateQueryForUpdated(String recieverId, String sender) {
+	private void updateQueryForUpdated(final String recieverId, final String sender) {
 		jdbcTemplate.update("update friendmanagement " + " set updated = ? " + " where email = ?",
 				new Object[] { recieverId, sender });
+	}
+	
+	private List<String> getListOfAllEmails(){
+		final String query = "SELECT email FROM friendmanagement";
+		final List<String> emails = jdbcTemplate.queryForList(query, String.class);
+		return emails;
 	}
 
 }
